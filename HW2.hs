@@ -7,15 +7,11 @@ data TBank = TBank
    , totalSum :: Int
    } deriving (Show)
 
-
-
 getTotal :: TBank -> Int
 getTotal ( TBank _ _ _ a ) = a
  
-
 getTransf :: TBank -> Int
 getTransf ( TBank _ _ g _ ) = g
-
 
 isWithdrawOk :: TBank -> Int -> Bool
 isWithdrawOk b amount = do
